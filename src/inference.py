@@ -37,9 +37,6 @@ def load_test_dataset(dataset_dir, tokenizer):
   return tokenized_test, test_label
 
 def main(args):
-  """
-    주어진 dataset tsv 파일과 같은 형태일 경우 inference 가능한 코드입니다.
-  """
   device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
   # load tokenizer
   TOK_NAME = "bert-base-multilingual-cased"  
